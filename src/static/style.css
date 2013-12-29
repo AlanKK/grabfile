@@ -1,0 +1,264 @@
+@font-face {
+  font-family: 'Nobile';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Nobile'), url('nobile.ttf') format('truetype');
+}
+
+#container {
+    min-height:100%;
+    position:relative;
+	height:100%;
+}
+
+html, body { 
+	margin: 0;
+	padding: 0; 
+	height:100%;
+	font-family: 'Nobile', Arial, sans-serif;
+	font-size: 13px;
+	background: #f8f8f8;
+}
+
+#body { 
+	padding:10px;
+	padding-bottom:80px;	/* Height of the footer */
+}
+
+.errormsg { color:red; font-weight:bold; }
+
+a img {
+	border: none;
+}
+
+a {
+		color: #666;
+		outline: 0;
+}
+
+a:hover {
+		color: #222;
+}
+
+a.selected {
+	text-decoration: underline !important;
+}
+
+/** Layout
+ */
+#content {
+	background-color: #f8f8f8;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.wrapper {
+	width: 940px;
+	margin: 10 auto;
+	clear: left;
+}
+
+/** Header
+ */
+#header { 
+	height: 120px;
+	padding:10px;
+	background: #f8f8f8 url('/static/bg.jpg') top left repeat;
+}
+
+#logo {
+	padding: 25px 0px;
+	float: left;
+	width: 300px;
+}
+
+#menu {
+	background-color: green;
+	display: block;
+	font-size: 13px;
+}
+
+ul.navigation {
+	margin-top: 45px;
+	float: right;
+	list-style-type: none;
+}
+
+ul.navigation li {
+		float: left;
+		list-style-type: none;
+		line-height: 30px;
+		height: 30px;
+}
+
+ul.navigation li a {
+		float: left;
+		margin-left: 30px;
+}
+
+h1, h2 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: 26px;
+		color: #333;
+}
+h3 {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		color: #333;
+}
+
+.indentedtext { padding-left: 100px; }
+
+/* Buttons */
+.navbuttons a { text-decoration:none; color:#808080; padding:3px; margin:2px; font-weight:bold; border:solid; border-width:2px; border-color:#808080; }
+.navbuttons a:hover { color:#FF0000; text-decoration:underline; }
+
+
+#footer a,
+#header a {
+		color: #bbb;
+		text-decoration: none;
+}
+
+#footer a:hover,
+#header a:hover {
+		color: #ddd;
+}
+
+#footer p {
+		margin: 0 5px;
+}
+
+#footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #999;
+	background: #f8f8f8 url('/static/bg.jpg') top left repeat;
+}
+
+#footer .col1 {
+	width: 50%;
+	float: left;
+}
+#footer .col2 {
+	width: 50%;
+	text-align: right;
+	float: left;
+}
+
+.hl {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/** Panel
+ */
+.panel {
+	padding: 1px 0 30px 0;
+	display: block;
+}
+
+/* Main */
+
+.clear {
+	clear: left;
+}
+
+.devprofile {
+	float: left;
+	font-size: 12px;
+	display: block;
+	width: 200px;
+	min-height: 210px;
+	padding: 10px;
+	margin: 20px 40px;
+	border: 1px solid #ccc;
+}
+
+.devprofile .social,
+.devprofile .name {
+	display: block;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.devprofile .name {
+	font-size: 18px;
+}
+
+.devprofile .social {
+	margin-top: 5px;
+}
+
+.devprofile a {
+	color: #ef7600;
+	text-decoration: none;
+}
+
+.devpic {
+	float: left;
+	margin-right: 10px;
+	height: 80px;
+}
+
+dl.aboutus,
+dl.aboutus dd {
+	list-style-type: none;
+}
+
+dl.aboutus dt {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: #333;
+}
+
+dl.aboutus dd {
+	margin: 0px;
+	padding: 0px;
+}
+ul.devinfo li {
+	height: 80px;
+}
+
+.devcontact {
+	margin-top: 10px;
+}
+
+.ircnick {
+	font-style: italic;
+}
+
+ul.talks li {
+	margin-bottom: 10px;
+}
+
+
+/** IE fixes
+ */
+body {
+	text-align: center;
+}
+
+.wrapper {
+	text-align: left;
+}
+
+
+/** Logo panel
+ */
+table.logolist {
+	width: 100%;
+}
+table.logolist td {
+	text-align: center;
+}
+

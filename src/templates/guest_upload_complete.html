@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{{ super() }}
+{% block content %}
+{% if error %}
+	<h1>Upload failed</h1>
+{% else %}
+	<h1>Upload of {{ filename }} is complete.</h1>
+	<br>
+	<h3>Thank you!  {{ email }} has been notified that the file is ready.</h3>
+{% endif %}
+{% endblock %}
+

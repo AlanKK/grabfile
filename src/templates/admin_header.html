@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{{ super() }}
+{% block admin_header%}
+<div id="content">
+	<div class="wrapper">
+		<div class="admin" id="panel-admin">
+		  <h2>{{title}}</h2>
+			{% if session['admin'] %}
+				<p class="navbuttons"><a href="{{ url_for('add_user') }}">Add User</a>
+				<a href="{{ url_for('manage_users') }}">Manage Users</a>
+				<a href="{{ url_for('manage_users') }}">Manage Files</a></p>
+			{% endif %}
+		</div>
+	</div> <!-- end of wrapper -->
+</div> <!-- end of content -->
+{% endblock %}
+

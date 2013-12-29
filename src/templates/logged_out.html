@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{{ super() }}
+{% block content %}
+<a>You have been logged out.  </a><a href="{{ url_for('login') }}">Login</a> <a> again</a>
+
+{% endblock %}

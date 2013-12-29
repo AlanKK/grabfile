@@ -1,0 +1,35 @@
+{% extends "admin_header.html" %}
+{{ super() }}
+{% block content %}
+  <h2>Add User</h2>
+  {% if error %}<p class=errormsg><strong>Error:</strong> {{ error }}{% endif %}
+  {% if info %}<a>{{ info }}</a>{% endif %}
+  <form action="{{ url_for('add_user') }}" method=POST>
+    <dl>
+      <dt>Username:
+      <dd><input type=text name=username>
+      <dt>Password:
+	  <br>
+      <dd><input type=text name=password>
+      <dt>Administrator:
+	  <br>
+	  <dd><input type=checkbox name="Administrator">
+	  <br>
+	  <a>Administrators can manage users, manage everyone's files and change system settings.</a>
+	  <br>
+	  <br>
+      <dd><input type=submit value=Add>
+    </dl>
+  </form>
+{% endblock %}
+
+<!--
+<FORM ACTION="../cgi-bin/mycgi.pl" NAME="application">
+application date: <INPUT TYPE=TEXT NAME="appdate" SIZE=10>
+<BUTTON 
+    TYPE=BUTTON 
+    onClick="document.application.appdate.value=today()"><I>today</I></BUTTON><P>
+<BUTTON TYPE=RESET><FONT COLOR=RED>Reset Form</FONT></BUTTON> 
+<BUTTON TYPE=SUBMIT><STRONG>Send It!</STRONG></BUTTON>
+</FORM>
+-->

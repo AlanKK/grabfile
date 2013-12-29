@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{{ super() }}
+{% block content %}
+{% if error %}
+	<h1>Upload failed</h1>
+{% else %}
+	<h1>Step 3: Copy the text below and send it to a friend.</h1>
+	<br>
+<center>
+<table bgcolor="#FFFFFF">
+<tr>
+<td>
+	<h3><A href="{{file_url}}">{{file_url}}</A></h3>
+	<a>If you use Internet Explorer, right click on the link an choose "Save Target As..."</a>
+</td>
+</tr>
+</table>
+</center>
+{% endif %}
+{% endblock %}
+

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{{ super() }}
+{% block content %}
+	<p><h2>
+	<img src="/static/favicon.png" height="24" width="24"/>
+	Welcome to GrabFile.  Someone has requested that you upload a file for them.  Choose a file below to begin the upload.  After the upload completes, send them the link to the file you uploaded.</h2>
+	</p>
+	<div class="indentedtext">
+	<form enctype="multipart/form-data" action="/guest_upload_complete" method="POST">
+		<h3>Step 1: Choose File</h3><input name="file" type="file" size=60>
+		<br>
+		<h3>Step 2: Click Upload</h3><input value="Upload" type="submit" size=60>
+		</form>
+	</div>
+{% endblock %}
+

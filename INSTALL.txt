@@ -1,0 +1,12 @@
+Installation Instructions
+
+sudo apt-get install sqlite3
+sudo apt-get install python-flask
+
+To run:
+
+python grabfile.py
+
+Point your browser to http://localhost/5000
+Login with user: admin  password: test
+
