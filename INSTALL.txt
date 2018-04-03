@@ -2,6 +2,7 @@ Installation Instructions
 
 sudo apt-get install sqlite3
 sudo apt-get install python-flask
+sudo pip install flask_debugtoolbar
 
 To run:
 

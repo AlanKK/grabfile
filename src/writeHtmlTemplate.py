@@ -57,15 +57,15 @@ def writeHtmlTemplate(title, content):
 	<div class="wrapper">
 		<div class="col1">
 			<p>
-				<a href="http://code.google.com/p/grabfile/">Project home</a>
+				<a href="https://github.com/AlanKK/grabfile">Project home</a>
 			</p>
 			<p>
-				<a href="http://code.google.com/p/grabfile/issues/list">Report a bug</a>
+				<a href="https://github.com/AlanKK/grabfile">Report a bug</a>
 			</p>
 		</div>
 		<div class="col2">
 			<p>
-				<a href="mailto:alankeister@gmail.com">Contact</a>
+				<a href="mailto:<enter siteadmin email>">Contact</a>
 			</p>
 		</div>
 	</div>

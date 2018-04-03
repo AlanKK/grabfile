@@ -44,7 +44,7 @@ app.config['password'] = 'test'
 
 dbpw = dbpassword('password.db')
 dbpw.update('admin', 'test', 'Administrator', 1) # update or set a new password
-dbpw.update('alank', 'test', 'Alan Keister', 0) # update or set a new password
+dbpw.update('user1', 'test', 'User One', 0) # update or set a new password
 
 dbsession = dbsession('sessions.db')
 

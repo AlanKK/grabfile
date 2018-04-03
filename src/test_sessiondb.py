@@ -8,7 +8,7 @@ sess = dbsession('session_test.db')
 
 session_list = []
 
-user = 'alank'
+user = 'user1'
 session_id = str(uuid4())
 session_list.append(session_id)
 sess.add_session(user, session_id, expiration=0)
@@ -16,7 +16,7 @@ sessions = sess.get_sessions(user)
 assert len(sessions) == 1
 assert sessions[0][0] == session_id
 
-user = 'alank'
+user = 'user1'
 session_id = str(uuid4())
 sess.add_session(user, session_id, expiration=0)
 sessions = sess.get_sessions(user)
@@ -28,7 +28,7 @@ sessions = sess.get_sessions(user)
 assert len(sessions) == 1
 
 # Add files, delete files
-user = 'alank'
+user = 'user1'
 session_id = str(uuid4())
 session_list.append(session_id)
 sess.add_session(user, session_id, expiration=0)
@@ -52,7 +52,7 @@ sessions = sess.get_sessions(user)
 assert session_id not in sessions
 
 # Add another session and some files
-user = 'alank'
+user = 'user1'
 session_id = str(uuid4())
 session_list.append(session_id)
 sess.add_session(user, session_id, expiration=0)
